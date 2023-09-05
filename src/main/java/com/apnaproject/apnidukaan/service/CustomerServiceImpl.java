@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.apnaproject.apnidukaan.dto.CustomerDTO;
 import com.apnaproject.apnidukaan.entity.Customer;
-import com.apnaproject.apnidukaan.entity.CustomerDTO;
 import com.apnaproject.apnidukaan.exception.ApniDukaanException;
 import com.apnaproject.apnidukaan.repository.CustomerRepository;
 

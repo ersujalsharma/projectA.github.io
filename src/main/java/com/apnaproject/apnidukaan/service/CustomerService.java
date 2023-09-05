@@ -1,6 +1,6 @@
 package com.apnaproject.apnidukaan.service;
 
-import com.apnaproject.apnidukaan.entity.CustomerDTO;
+import com.apnaproject.apnidukaan.dto.CustomerDTO;
 import com.apnaproject.apnidukaan.exception.ApniDukaanException;
 
 public interface CustomerService {

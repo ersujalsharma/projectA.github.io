@@ -1,4 +1,4 @@
-package com.apnaproject.apnidukaan.entity;
+package com.apnaproject.apnidukaan.dto;
 
 public class CustomerDTO {
 	private String emailId;
