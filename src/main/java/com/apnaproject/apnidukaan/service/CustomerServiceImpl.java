@@ -11,6 +11,7 @@ import com.apnaproject.apnidukaan.entity.Customer;
 import com.apnaproject.apnidukaan.exception.ApniDukaanException;
 import com.apnaproject.apnidukaan.repository.CustomerRepository;
 
+
 @Service
 @Transactional
 public class CustomerServiceImpl implements CustomerService{
@@ -60,5 +61,38 @@ public class CustomerServiceImpl implements CustomerService{
 		customerDTO.setAddress(customer.getAddress());
 		return customerDTO;
 	}
+
+	@Override
+	public CustomerDTO getCustomerByEmailId(String emailId) throws ApniDukaanException {
+		Optional<Customer> optionalCustomer = customerRepository.findByEmailId(emailId);
+		Customer customer = optionalCustomer
+				.orElseThrow(() -> new ApniDukaanException("CustomerService.CUSTOMER_NOT_FOUND"));
+		CustomerDTO customerDTO = new CustomerDTO();
+		customerDTO.setEmailId(emailId);
+		customerDTO.setName(customer.getName());
+		customerDTO.setPhoneNumber(customer.getPhoneNumber());
+		customerDTO.setPassword(customer.getPassword());
+		customerDTO.setNewPassword(customer.getPassword());
+		customerDTO.setAddress(customer.getAddress());
+		return customerDTO;
+	}
+
+	@Override
+	public void updateShippingAddress(String customerEmailId,String address) throws ApniDukaanException {
+		Optional<Customer> optionalCustomer = customerRepository.findById(customerEmailId.toLowerCase());
+		Customer customer = optionalCustomer
+				.orElseThrow(() -> new ApniDukaanException("CustomerService.CUSTOMER_NOT_FOUND"));
+		customer.setAddress(address);
+		
+	}
+
+	@Override
+	public void deleteShippingAddress(String customerEmailId) throws ApniDukaanException {
+		Optional<Customer> optionalCustomer = customerRepository.findById(customerEmailId.toLowerCase());
+		Customer customer = optionalCustomer
+				.orElseThrow(() -> new ApniDukaanException("CustomerService.CUSTOMER_NOT_FOUND"));
+		customer.setAddress(null);
+	}
+
 	
 }
