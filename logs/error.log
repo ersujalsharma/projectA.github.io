@@ -1,0 +1,29 @@
+2023-Sep-17 01:54:00 AM [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-Sep-17 01:54:00 AM [restartedMain] INFO  com.apnaproject.apnidukaan.ApniDukaanApplication - Starting ApniDukaanApplication using Java 18.0.2.1 with PID 20332 (C:\Users\sujal\OneDrive\Desktop\PROJECT\ApniDukaan\ApniDukaan\target\classes started by sujal in C:\Users\sujal\OneDrive\Desktop\PROJECT\ApniDukaan\ApniDukaan)
+2023-Sep-17 01:54:00 AM [restartedMain] INFO  com.apnaproject.apnidukaan.ApniDukaanApplication - No active profile set, falling back to 1 default profile: "default"
+2023-Sep-17 01:54:00 AM [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-Sep-17 01:54:00 AM [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-Sep-17 01:54:00 AM [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Sep-17 01:54:00 AM [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 8 JPA repository interfaces.
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 70 (http)
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-70"]
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/apnidukaan] - Initializing Spring embedded WebApplicationContext
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1380 ms
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b3d7cae
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-Sep-17 01:54:01 AM [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-Sep-17 01:54:02 AM [restartedMain] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-17 01:54:02 AM [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-Sep-17 01:54:02 AM [restartedMain] INFO  org.hibernate.bytecode.internal.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-Sep-17 01:54:03 AM [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Sep-17 01:54:03 AM [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Sep-17 01:54:03 AM [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Sep-17 01:54:04 AM [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-Sep-17 01:54:04 AM [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-70"]
+2023-Sep-17 01:54:04 AM [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 70 (http) with context path '/apnidukaan'
+2023-Sep-17 01:54:04 AM [restartedMain] INFO  com.apnaproject.apnidukaan.ApniDukaanApplication - Started ApniDukaanApplication in 4.367 seconds (process running for 5.052)
